@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex--column {
+    flex-direction: column;
+}
+
+.d-flex.align-middle {
+    justify-content: center;
+}
+
+.container {
+    padding: 0 1rem;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+header.container {
+    margin-bottom: 1.5rem;
+}
+
+.container__title {
+    order: 2;
+    text-align: center;
+    font-size: 1.85rem;
+    line-height: 1.5;
+}
+
+.container__title span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container__logo {
+    order: 1;
+}
+
+form, .graph {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid gray;
+}
+
+form {
+    margin-right: .5rem;
+}
+
+form legend {
+    padding: 0 .5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: .5rem;
+    overflow-y: auto;
+    height: 20rem;
+}
+
+fieldset p {
+    padding: 1rem .25rem;
+    border-bottom: 1px solid gray;
+}
+
+fieldset input {
+    margin-right: .5rem;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: .5rem;
+    border: none;
+    box-shadow: .2rem .2rem 1rem rgba(0,0,0,.15);
+}
+
+.btn.btn-default {
+    border-radius: .5rem;
+    background-color: #2BD9F5;
+    color: white;
+}
+
+.message-block {
+    background: #0e7931;
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+    text-shadow: .15rem .25rem rgba(0,0,0,.1);
+    margin: 1.5rem 0;
+}
+
+.message-block .message-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.message-block .items {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: .5rem .25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    p.d-flex {
+        flex-direction: row;
+    }
+
+    form {
+        margin-right: 0;
+        margin-bottom: .5rem;
+    }
+}
